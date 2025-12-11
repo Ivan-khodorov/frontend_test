@@ -1,0 +1,20 @@
+@use "./base/reset";
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0B63660F;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+

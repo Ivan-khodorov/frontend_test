@@ -1,0 +1,25 @@
+@use "../../styles/variables/variables" as *;
+@use "../../styles/base/mixins" as *;
+
+.home {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 80px;
+  text-align: center;
+
+  .home__title {
+    font-family: $typo-page-title-family;
+    font-size: $typo-page-title-size;
+    font-weight: $typo-page-title-weight;
+    line-height: $typo-page-title-line-height;
+    letter-spacing: $typo-page-title-letter-spacing;
+    color: $text-primary;
+    margin-bottom: $space-8;
+  }
+
+  .home__info {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,141 @@
+@use "../../styles/variables/variables" as *;
+@use "../../styles/base/mixins" as *;
+
+.lang-switch {
+  position: relative;
+  box-shadow: 0 0 50px 0 $interactive-ghost-bg-hover;
+  font-family: $typo-button-family;
+  font-size: $typo-button-size;
+  font-weight: $typo-button-weight;
+  line-height: $typo-button-line-height;
+  color: $interactive-ghost-fg-default;
+  background: $surface-bg;
+
+  &__button {
+    width: $lang-switch-button-width;
+    height: $lang-switch-button-height;
+    @include flex-row(center, space-between, $space-2);
+    padding: 0 $space-3;
+    border: none;
+    border-radius: $radius-2;
+    cursor: pointer;
+    color: $interactive-ghost-fg-default;
+
+    transition: background 150ms ease-out, color 150ms ease-out;
+
+    &:hover {
+      background: $interactive-ghost-bg-hover;
+      color: $interactive-ghost-fg-hover;
+    }
+
+    &:active {
+      background: $interactive-ghost-bg-pressed;
+      color: $interactive-ghost-fg-pressed;
+    }
+  }
+
+  &.is-open &__button {
+    background: $interactive-ghost-bg-selected;
+    color: $interactive-ghost-fg-selected;
+  }
+
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 12px;
+      height: 6px;
+      stroke: currentColor;
+      transition: transform 150ms ease-out;
+    }
+  }
+
+  &.is-open &__icon svg {
+    transform: rotate(180deg);
+  }
+
+  &__menu {
+    position: absolute;
+    top: calc(100% + $space-1);
+    right: 0;
+    margin-right: $space-10;
+
+    background: $surface-bg;
+    border-radius: $radius-2;
+    padding: $space-1 0;
+    min-width: $lang-switch-item-width;
+
+    box-shadow: $shadow-surface-soft;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-$space-1);
+
+    transition: opacity 120ms ease-out, transform 120ms ease-out, visibility 120ms ease-out;
+    z-index: 1000;
+  }
+
+  &.is-open &__menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  &__item {
+    width: $lang-switch-item-width;
+    height: $lang-switch-item-height;
+
+    @include flex-row(center, space-between);
+
+    padding: $space-2 $space-3;
+    padding-left: $space-4;
+
+    border-radius: $radius-2;
+    cursor: pointer;
+
+    font-family: $typo-button-family;
+    font-size: $typo-button-size;
+    font-weight: $typo-button-weight;
+
+    background: $interactive-ghost-bg-default;
+    color: $interactive-ghost-fg-default;
+
+    transition: background 120ms ease-out, color 120ms ease-out;
+
+    &:hover {
+      background: $interactive-ghost-bg-hover;
+      color: $interactive-ghost-fg-hover;
+    }
+
+    &:active {
+      background: $interactive-ghost-bg-pressed;
+      color: $interactive-ghost-fg-pressed;
+    }
+
+    &.is-selected {
+      background: $interactive-ghost-bg-selected;
+      color: $interactive-ghost-fg-selected;
+    }
+  }
+
+  &__check {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 120ms ease-out;
+
+    svg {
+      width: 12px;
+      height: 9px;
+      stroke: currentColor;
+    }
+  }
+
+  &__item.is-selected &__check,
+  &__item:active &__check {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,41 @@
+@use "../../styles/variables/variables" as *;
+@use "../../styles/base/mixins" as *;
+
+.header {
+  background: $surface-bg;
+
+  margin: $space-4;
+  border-radius: $radius-4;
+  box-shadow: 0 0 50px 0 #0b63661a;
+
+  border: 1px solid $surface-border-subtle;
+  backdrop-filter: blur(16px);
+
+
+  .header__inner {
+    @include flex-row(center, space-between);
+    padding: 0 $space-6;
+    height: $header-height;
+  }
+
+  .header__logos {
+    @include flex-row(center, flex-start, $space-3);
+
+    .header__logo-img {
+      width: $header-logo-size;
+      height: $header-logo-size;
+      object-fit: contain;
+    }
+  }
+
+  .header__text {
+    @include text(
+                    $typo-header-bar-text-family,
+                    $typo-header-bar-text-size,
+                    $typo-header-bar-text-weight,
+                    $typo-header-bar-text-line-height
+    );
+    color: $text-primary;
+    padding-left:$space-1;
+  }
+}

@@ -1,0 +1,49 @@
+@use "../../styles/variables/variables" as *;
+@use "../../styles/base/mixins" as *;
+
+.footer {
+  padding: $space-6 $space-10;
+
+  .footer__inner {
+    @include flex-row(center, space-between);
+    color: $text-footer-link;
+  }
+
+  .footer__copyright {
+    @include text(
+                    $typo-info-text-family,
+                    $typo-info-text-size,
+                    $typo-info-text-weight,
+                    $typo-info-text-line-height
+    );
+
+    color: $text-footer-link;
+  }
+
+  .footer__links {
+    @include flex-row(center, flex-end);
+
+    .footer__link {
+      @include text(
+                      $typo-info-text-family,
+                      $typo-info-text-size,
+                      $typo-info-text-weight,
+                      $typo-info-text-line-height
+      );
+
+      color: $text-footer-link;
+      text-decoration: none;
+      transition: text-decoration 150ms ease-out;
+
+      &:hover {
+        color: $text-footer-link-hover;
+      }
+    }
+    .footer__link + .footer__link {
+      padding-left: $space-4;
+      margin-left: $space-4;
+      border-left: 1px solid $text-footer-link;
+    }
+
+  }
+}

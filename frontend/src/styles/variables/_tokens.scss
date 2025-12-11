@@ -1,0 +1,17 @@
+@use "colors" as *;
+@use "typography" as *;
+
+// Header
+$header-height: 80px;
+$header-logo-size: 48px;
+$header-logo-gap: 12px;
+$header-text-width: 448px;
+$header-text-height: 24px;
+$header-text-font-size: 20px;
+$header-text-font-weight: 500;
+
+// Language switcher
+$lang-switch-button-width: 88px;
+$lang-switch-button-height: 40px;
+$lang-switch-item-width: 112px;
+$lang-switch-item-height: 40px;
