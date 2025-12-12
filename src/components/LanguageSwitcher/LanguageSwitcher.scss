@@ -1,0 +1,236 @@
+
+.lang-switch {
+  position: relative;
+  box-shadow: 0 0 50px 0 var(--color-primary-10);
+  font-family: 'Inter', sans-serif;
+  font-size: var(--font-size-button);
+  font-weight: var(--font-weight-button);
+  line-height: 1.2;
+  color: var(--color-black-70);
+  background: var(--color-white);
+}
+
+.lang-switch__button {
+  width: 88px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--color-black-70);
+  background: transparent;
+  transition: background 150ms ease-out, color 150ms ease-out;
+}
+
+.lang-switch__button:hover {
+  background: var(--color-primary-10);
+  color: var(--color-primary);
+}
+
+.lang-switch__button:active {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.lang-switch.is-open .lang-switch__button {
+  background: #fefefecc;
+  color: var(--color-black-70);
+}
+
+.lang-switch__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-switch__icon svg {
+  width: 12px;
+  height: 6px;
+  stroke: currentColor;
+  transition: transform 150ms ease-out;
+}
+
+.lang-switch.is-open .lang-switch__icon svg {
+  transform: rotate(180deg);
+}
+
+.lang-switch__menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: 4px 0;
+  min-width: 112px;
+  box-shadow: 0px 1px 25px 0px #1111111f;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: opacity 120ms ease-out, transform 120ms ease-out, visibility 120ms ease-out;
+  z-index: 1000;
+}
+
+.lang-switch.is-open .lang-switch__menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.lang-switch__item {
+  width: 112px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: var(--font-size-button);
+  font-weight: var(--font-weight-button);
+  background: #fefefecc;
+  color: var(--color-black-70);
+  transition: background 120ms ease-out, color 120ms ease-out;
+}
+
+.lang-switch__item:hover {
+  background: var(--color-primary-10);
+  color: var(--color-primary);
+}
+
+.lang-switch__item:active {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.lang-switch__item.is-selected {
+  background: #fefefecc;
+  color: var(--color-black-70);
+}
+
+.lang-switch__check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 120ms ease-out;
+}
+
+.lang-switch__check svg {
+  width: 12px;
+  height: 9px;
+  stroke: currentColor;
+}
+
+.lang-switch__item.is-selected .lang-switch__check,
+.lang-switch__item:active .lang-switch__check {
+  opacity: 1;
+}
+
+@media (max-width: 1439px) {
+  .lang-switch__button {
+    width: 80px;
+    height: 36px;
+    gap: 8px;
+    padding: 0 12px;
+    border-radius: 8px;
+  }
+
+  .lang-switch__menu {
+    min-width: 104px;
+    border-radius: 8px;
+    padding: 4px 0;
+  }
+
+  .lang-switch__item {
+    width: 104px;
+    height: 36px;
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lang-switch {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .lang-switch__button {
+    width: 72px;
+    height: 32px;
+    gap: 8px;
+    padding: 0 10px;
+    border-radius: 8px;
+  }
+
+  .lang-switch__icon svg {
+    width: 12px;
+    height: 6px;
+  }
+
+  .lang-switch__menu {
+    min-width: 96px;
+    border-radius: 8px;
+    padding: 4px 0;
+  }
+
+  .lang-switch__item {
+    width: 96px;
+    height: 32px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+
+  .lang-switch__check svg {
+    width: 12px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 423px) {
+  .lang-switch {
+    font-size: 14px;
+  }
+
+  .lang-switch__button {
+    width: 64px;
+    height: 32px;
+    gap: 6px;
+    padding: 0 8px;
+  }
+
+  .lang-switch__menu {
+    min-width: 88px;
+  }
+
+  .lang-switch__item {
+    width: 88px;
+    height: 32px;
+    padding: 6px 8px;
+  }
+}
+
+@media (max-width: 325px) {
+  .lang-switch__button {
+    width: 60px;
+    height: 32px;
+    gap: 6px;
+    padding: 0 8px;
+  }
+
+  .lang-switch__menu {
+    min-width: 84px;
+  }
+
+  .lang-switch__item {
+    width: 84px;
+    height: 32px;
+    padding: 6px 8px;
+  }
+}

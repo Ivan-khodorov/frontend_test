@@ -2,6 +2,7 @@
 /shelf/
 /.idea/workspace.xml
 /node_modules
+/.parcel-cache
 dist/
 node_modules/
 /.idea

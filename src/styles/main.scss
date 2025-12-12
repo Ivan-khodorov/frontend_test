@@ -1,0 +1,25 @@
+@import "variables";
+@import "base";
+
+@import "Header";
+@import "Footer";
+@import "../components/LanguageSwitcher/LanguageSwitcher";
+@import "../components/InfoSection/InfoSection";
+@import "../components/ProcessList/ProcessList";
+
+@import "../pages/Home/Home";
+@import "../pages/Documents/Documents";
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0B63660F;
+}
+
+.main {
+  flex: 1;
+  padding:0;
+}
+
+
