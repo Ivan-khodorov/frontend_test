@@ -3,9 +3,12 @@
 
 @import "Header";
 @import "Footer";
+
 @import "../components/LanguageSwitcher/LanguageSwitcher";
-@import "../components/InfoSection/InfoSection";
+@import "../components/Card/Card";
 @import "../components/ProcessList/ProcessList";
+@import "../components/LevelSelector/LevelSelector";
+@import "../components/PersonsSelector/PersonsSelector";
 
 @import "../pages/Home/Home";
 @import "../pages/Documents/Documents";
@@ -19,7 +22,5 @@
 
 .main {
   flex: 1;
-  padding:0;
+  padding: 0;
 }
-
-

@@ -1,8 +1,7 @@
-
 .lang-switch {
   position: relative;
   box-shadow: 0 0 50px 0 var(--color-primary-10);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: var(--font-size-button);
   font-weight: var(--font-weight-button);
   line-height: 1.2;
@@ -67,17 +66,19 @@
   padding: 4px 0;
   min-width: 112px;
   box-shadow: 0px 1px 25px 0px #1111111f;
+  z-index: 1000;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4px);
+  pointer-events: none;
   transition: opacity 120ms ease-out, transform 120ms ease-out, visibility 120ms ease-out;
-  z-index: 1000;
 }
 
 .lang-switch.is-open .lang-switch__menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+  pointer-events: auto;
 }
 
 .lang-switch__item {
@@ -89,7 +90,7 @@
   padding: 8px 12px;
   border-radius: 8px;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: var(--font-size-button);
   font-weight: var(--font-weight-button);
   background: #fefefecc;
@@ -108,8 +109,8 @@
 }
 
 .lang-switch__item.is-selected {
-  background: #fefefecc;
-  color: var(--color-black-70);
+  background: var(--color-primary-10);
+  color: var(--color-primary);
 }
 
 .lang-switch__check {
@@ -194,10 +195,6 @@
 }
 
 @media (max-width: 423px) {
-  .lang-switch {
-    font-size: 14px;
-  }
-
   .lang-switch__button {
     width: 64px;
     height: 32px;
