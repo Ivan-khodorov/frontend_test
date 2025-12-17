@@ -61,3 +61,34 @@
      linear-gradient(0deg, rgba(28, 28, 28, 0.6), rgba(28, 28, 28, 0.6)),
      linear-gradient(0deg, rgba(11, 99, 102, 0.2), rgba(11, 99, 102, 0.2))
 }
+
+
+@media (max-width: 1439px) {
+  :root {
+    --font-size-title: 26px;
+    --font-size-header-text: 18px;
+    --font-size-subtitle: 16px;
+    --font-size-button: 15px;
+    --font-size-info: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --font-size-title: 22px;
+    --font-size-header-text: 16px;
+    --font-size-subtitle: 16px;
+    --font-size-button: 14px;
+    --font-size-info: var(--font-size-info-mobil);
+  }
+}
+
+@media (max-width: 525px) {
+  :root {
+    --font-size-title: 20px;
+    --font-size-header-text: 14px;
+    --font-size-subtitle: 16px;
+    --font-size-button: 13px;
+    --font-size-info: 12px;
+  }
+}

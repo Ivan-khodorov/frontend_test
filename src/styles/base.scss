@@ -11,6 +11,7 @@ html, body {
   height: 100%;
   color: var(--color-black);
   background: var(--color-white);
+  font-family: "Inter", sans-serif;
 }
 
 img {
@@ -32,4 +33,16 @@ ul, ol {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0B63660F;
+}
+
+.main {
+  flex: 1;
+  padding: 0;
 }

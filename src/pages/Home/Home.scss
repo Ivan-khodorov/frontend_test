@@ -1,50 +1,72 @@
-.home {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-top: 80px;
-  text-align: center;
-  position: relative;
-}
-
 .home__title {
-  font-family: "Inter", sans-serif;
+  color: var(--color-primary-80);
   font-size: var(--font-size-title);
   font-weight: var(--font-weight-title);
-  color: var(--color-primary-80);
 }
 
-@media (max-width: 1439px) {
-  .home {
-    padding-top: 16px;
+.process-list {
+  padding-top: 80px;
+
+  @media (max-width: 765px) {
+    padding-top: 32px;
+  }
+  .home__title {
+    margin: 0 auto 32px;
+    text-align: center;
+
+    @media (max-width: 765px) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.level-select {
+  margin-top: 80px;
+
+  @media (max-width: 765px) {
+    margin-top: 32px;
   }
 
   .home__title {
-    font-size: 26px;
+    margin: 0 auto 32px;
+    text-align: center;
+    max-width: calc(100vw - 74px);
+    @media (max-width: 765px) {
+      margin-bottom: 16px;
+    }
   }
 }
 
-@media (max-width: 768px) {
-  .home__title {
-    font-size: 24px;
+.app {
+  &[data-state="process"] {
+    #process-block { display: block; }
+    #level-block { display: none; }
+  }
+
+  &[data-state="level"] {
+    #process-block { display: block; }
+    #level-block { display: block; }
   }
 }
 
-@media (max-width: 425px) {
-  .home__title {
-    font-size: 20px;
+@media (min-width: 932px) {
+  .card-section__back {
+    display: none;
   }
 }
 
-.is-hidden {
-  display: none;
-}
+@media (max-width: 932px) {
+  .app[data-state="level"] {
+    #process-block { display: none; }
+    #level-block { display: block; }
+  }
 
-.home.is-level-only #process-block {
-  display: none;
-}
+  .app[data-state="process"] {
+    #process-block { display: block; }
+    #level-block { display: none; }
+  }
 
-.home.is-level-only #level-block {
-  display: block;
+  .card-section__back {
+    display: inline-flex;
+  }
 }
-

@@ -1,14 +1,10 @@
 {
-  "homepage": "https://ivan-khodorov.github.io/frontend_test",
-  "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html --dist-dir dist --public-url /frontend_test/",
-    "deploy": "gh-pages -d dist"
-  },
   "devDependencies": {
-    "@parcel/transformer-inline-string": "^2.16.3",
     "@parcel/transformer-sass": "^2.16.3",
-    "gh-pages": "^6.3.0",
-    "parcel": "^2.0.0"
+    "parcel": "^2.x.x"
+  },
+  "scripts": {
+    "dev": "parcel src/pages/Home/index.html src/pages/Category/CategoriesCivil/index.html",
+    "build": "parcel build src/pages/**/index.html"
   }
 }
