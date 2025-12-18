@@ -4,7 +4,7 @@
     "parcel": "^2.x.x"
   },
   "scripts": {
-    "dev": "parcel src/pages/Home/index.html src/pages/Category/CategoriesCivil/index.html",
+    "dev": "parcel src/pages/Home/index.html src/pages/Category/CategoriesCivil/index.html src/pages/Category/CategoriesAdministrative/index.html src/pages/Category/CategoriesCriminal/index.html",
     "build": "parcel build src/pages/**/index.html"
   }
 }
