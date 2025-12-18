@@ -1,0 +1,159 @@
+<!DOCTYPE html><html lang=ru><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>Legal Expert</title><link rel=stylesheet href=Home.fd45e879.css><link rel=stylesheet href=Home.66bc9ec1.css><body>
+<div class=app>
+    <header class=header>
+        <div class=container>
+            <div class=header__inner>
+                <div class=header__logos>
+                    <img src=logo-new.8582f29c.svg alt="Legal Expert new logo" class=header__logo-img>
+
+                    <img src=logo.87d5e9f4.png alt="Legal Expert logo" class=header__logo-img>
+
+                    <div class=header__text>
+                        Система подготовки к судебным процессам
+                    </div>
+                </div>
+
+                <div class=header__lang>
+                    <div class=lang-switch data-lang=ru>
+                        <button class=lang-switch__button type=button aria-haspopup=listbox aria-expanded=false>
+                            <span class=lang-switch__label>Рус</span>
+                            <span class=lang-switch__icon>
+                              <svg xmlns:xmlns=http://www.w3.org/2000/svg width=12 height=6 fill=none class=lang-switch__arrow viewBox="0 0 12 6"><path stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-miterlimit=10 stroke-width=1.25 d="M11.185.625 6.838 4.972a1.324 1.324 0 0 1-1.867 0L.626.625"/></svg>
+                            </span>
+                        </button>
+                        <div class=lang-switch__menu role=listbox>
+                            <ul class=lang-switch__list>
+                                <li class="is-selected lang-switch__item" data-lang=ru role=option aria-selected=true>
+                                    <span class=lang-switch__item-label>Рус</span>
+                                    <span class=lang-switch__check>
+                                      <svg xmlns:xmlns=http://www.w3.org/2000/svg width=12 height=9 fill=none class=lang-switch__check-icon viewBox="0 0 12 9"><path stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=1.25 d="M.625 4.05 4.05 7.474 10.91.625"/></svg>
+                                    </span>
+                                </li>
+
+                                <li class=lang-switch__item data-lang=kk role=option aria-selected=false>
+                                    <span class=lang-switch__item-label>Қаз</span>
+                                    <span class=lang-switch__check>
+                                      <svg xmlns:xmlns=http://www.w3.org/2000/svg width=12 height=9 fill=none class=lang-switch__check-icon viewBox="0 0 12 9"><path stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=1.25 d="M.625 4.05 4.05 7.474 10.91.625"/></svg>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class=main id=app-main>
+        <section class="card-section process-list" id=process-block>
+            <h2 class="card-section__title home__title" id=home-title>Выберите отрасль права</h2>
+
+            <div class="card-section__flex process-list__cards">
+                <article class="card process-card" data-process=civil>
+                    <div class=card__icon>
+                        <img src=civil-icon.d71e32b5.png alt="Гражданский процесс">
+                    </div>
+                    <div class=card__content>
+                        <h2 class=card__title>Гражданский процесс</h2>
+                        <p class=card__text>
+                            Рассмотрение споров о защите нарушенных или оспариваемых прав, свобод и законных интересов
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card process-card" data-process=administrative>
+                    <div class=card__icon>
+                        <img src=administrative.2907bd3e.png alt="Административный процесс">
+                    </div>
+                    <div class=card__content>
+                        <h2 class=card__title>Административный процесс</h2>
+                        <p class=card__text>
+                            Разрешение административных дел с целью защиты прав в публично-правовых отношениях
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card process-card" data-process=criminal>
+                    <div class=card__icon>
+                        <img src=criminal.b78b7915.png alt="Уголовный процесс">
+                    </div>
+                    <div class=card__content>
+                        <h2 class=card__title>Уголовный процесс</h2>
+                        <p class=card__text>
+                            Пресечение, раскрытие и расследование уголовных правонарушений
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <section class="card-section is-hidden level-select" id=level-block>
+            <div class=card-section__header>
+                <button class=card-section__back type=button id=level-back aria-label=Назад>
+                    <img src=arrow-left.4dd37b9c.svg alt>
+                </button>
+                <h2 class="card-section__title home__title" id=level-title>Выберите уровень рассмотрения дела</h2>
+                <span class=card-section__spacer aria-hidden=true></span>
+            </div>
+
+            <div class=card-section__flex>
+                <article class="card level-card" data-level=pretrial>
+                    <div class=card__icon>
+                        <img src=level-pretrial.347b0638.png alt="Досудебная претензия">
+                    </div>
+                    <div class=card__content>
+                        <h2 class=card__title>Досудебная претензия</h2>
+                        <p class=card__text>Попытка урегулировать спор до обращения в суд</p>
+                    </div>
+                </article>
+
+                <article class="card level-card" data-level=first-instance>
+                    <div class=card__icon>
+                        <img src=level-first-instance.a35bf9ef.png alt="Первая инстанция">
+                    </div>
+                    <div class=card__content>
+                        <h2 class=card__title>Первая инстанция</h2>
+                        <p class=card__text>Первоначальное рассмотрение дела в суде</p>
+                    </div>
+                </article>
+
+                <article class="card level-card" data-level=appeal>
+                    <div class=card__icon>
+                        <img src=level-appeal.396576a4.png alt="Подготовка к апелляции">
+                    </div>
+                    <div class=card__content>
+                        <h2 class=card__title>Подготовка к апелляции</h2>
+                        <p class=card__text>Обжалование решения суда первой инстанции</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+
+
+    </main>
+    <footer class=footer>
+        <div class=container>
+            <div class=footer__inner>
+                <div class=footer__copyright>
+                    © 2025 LegalExpert. Все права защищены.
+                </div>
+
+                <div class=footer__links>
+                    <a href=# class=footer__link>Связаться с нами</a>
+                    <a href=# class=footer__link>Условия использования</a>
+                    <a href=# class=footer__link>Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script type=module src=Home.fac5c748.js></script>
+<script type=module src=Home.7c022aba.js></script>
+<script type=module src=Home.38d394c2.js></script>
+
+
+
