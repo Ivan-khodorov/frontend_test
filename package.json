@@ -5,6 +5,6 @@
   },
   "scripts": {
     "dev": "parcel src/pages/index.html src/pages/Category/CategoriesCivil/index.html src/pages/Category/CategoriesAdministrative/index.html src/pages/Category/CategoriesCriminal/index.html",
-    "build": "parcel build src/pages/index.html src/pages/Category/CategoriesCivil/index.html src/pages/Category/CategoriesAdministrative/index.html src/pages/Category/CategoriesCriminal/index.html --dist-dir docs --public-url ./ --no-source-maps"
+    "build": "parcel build src/pages/**/index.html --dist-dir docs --public-url /frontend_test/ --no-source-maps"
   }
 }
