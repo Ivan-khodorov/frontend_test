@@ -1,11 +1,10 @@
 {
   "devDependencies": {
     "@parcel/transformer-sass": "^2.16.3",
-    "parcel": "^2.16.3",
-    "gh-pages": "^6.0.0"
+    "parcel": "^2.16.3"
   },
   "scripts": {
-    "dev": "parcel src/pages/index.html src/pages/Home/index.html src/pages/Category/CategoriesCivil/index.html src/pages/Category/CategoriesAdministrative/index.html src/pages/Category/CategoriesCriminal/index.html",
-    "build": "parcel build src/pages/index.html src/pages/Home/index.html src/pages/Category/CategoriesCivil/index.html src/pages/Category/CategoriesAdministrative/index.html src/pages/Category/CategoriesCriminal/index.html --dist-dir docs --public-url ./ --no-source-maps"
+    "dev": "parcel src/pages/index.html src/pages/Category/CategoriesCivil/index.html src/pages/Category/CategoriesAdministrative/index.html src/pages/Category/CategoriesCriminal/index.html",
+    "build": "parcel build src/pages/index.html src/pages/Category/CategoriesCivil/index.html src/pages/Category/CategoriesAdministrative/index.html src/pages/Category/CategoriesCriminal/index.html --dist-dir docs --public-url ./ --no-source-maps"
   }
 }
