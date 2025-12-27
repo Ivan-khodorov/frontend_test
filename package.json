@@ -4,7 +4,6 @@
     "parcel": "^2.16.3"
   },
   "scripts": {
-    "dev": "parcel src/pages/index.html src/pages/Category/Civil/index.html src/pages/Category/Administrative/index.html src/pages/Category/Criminal/index.html src/pages/PersonsSelect/Administrative/index.html src/pages/PersonsSelect/Civil/index.html src/pages/PersonsSelect/Criminal/index.html src/pages/Manual/Administrative/index.html src/pages/Manual/Civil/index.html src/pages/Manual/Criminal/index.html",
-    "build": "parcel build src/pages/**/index.html --dist-dir docs --public-url /frontend_test/ --no-source-maps"
+    "dev": "parcel src/pages/index.html src/pages/Category/Civil/index.html src/pages/Category/Administrative/index.html src/pages/Category/Criminal/index.html src/pages/PersonsSelect/Administrative/index.html src/pages/PersonsSelect/Civil/index.html src/pages/PersonsSelect/Criminal/index.html src/pages/Manual/Administrative/index.html src/pages/Manual/Civil/index.html src/pages/Manual/Criminal/index.html"
   }
 }
