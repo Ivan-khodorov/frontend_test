@@ -5,14 +5,16 @@ on:
     branches: [main]
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+        with:
+          ref: main
 
-      - name: Setup and Deploy
+      - name: Build and Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: src
           branch: gh-pages
+          folder: src
+          clean: true
