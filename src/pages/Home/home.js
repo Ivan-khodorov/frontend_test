@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const backButton = document.getElementById("level-back");
 
     const CATEGORY_PAGES = {
-        civil: "./Category/CategoriesCivil/index.html",
-        administrative: "./Category/CategoriesAdministrative/index.html",
-        criminal: "./Category/CategoriesCriminal/index.html",
+        civil: "./Category/Civil/index.html",
+        administrative: "./Category/Administrative/index.html",
+        criminal: "./Category/Criminal/index.html",
     };
 
     const setState = (state) => {

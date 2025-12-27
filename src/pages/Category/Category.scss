@@ -4,11 +4,14 @@
 
   &__container {
     max-width: 1440px;
-    width: calc(100vw - 48px);
+    width: calc(100vw - 32px);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 32px;
+    @media (max-width: 525px) {
+      width: calc(100vw - 16px);
+    }
   }
 
   &__path {
@@ -17,6 +20,10 @@
     margin-bottom: 8px;
     gap: 8px;
     font-size: var(--font-size-button);
+
+    @media (max-width: 525px) {
+      flex-wrap: wrap;
+    }
 
     &-text {
       color: var(--color-black-70);
@@ -47,7 +54,6 @@
     margin: 0 auto;
     display: flex;
     gap: 10px;
-    max-width: 1005px;
     height: 48px;
 
     @media (max-width: 525px) {
@@ -57,16 +63,19 @@
 
 
     &-input {
-      max-width: 700px;
-      width: calc(100vw - 300px);
+      max-width: 1005px;
+      width: calc(100vw - 32px);
       height: 48px;
       padding: 16px 16px 16px 46px;
       border-radius: 10px;
       border: none;
       outline: none;
       box-shadow: 0 1px 25px 0 #1111111F;
+      @media (max-width: 1471px) {
+        max-width: 1040px;
+      }
       @media (max-width: 525px) {
-        width: calc(100vw - 24px);
+        width: calc(100vw - 16px);
       }
       &:hover {
         background: linear-gradient(0deg, rgba(28, 28, 28, 0.02), rgba(28, 28, 28, 0.02)),
@@ -103,31 +112,6 @@
       height: 20px;
       color: var(--color-black-70);
     }
-
-    &-button {
-      max-width: 295px;
-      min-width: 240px;
-      height: 47px;
-      padding: 14px 20px;
-      border-radius: 10px;
-      color: var(--color-white);
-      background: linear-gradient(85.11deg, #0B6366 , #58A4EC );
-      font-weight: var(--font-weight-button);
-      cursor: pointer;
-      transition: background 150ms ease-out;
-
-      &:hover {
-        background:
-                linear-gradient(0deg, rgba(255,255,255,.15), rgba(255,255,255,.15)),
-                linear-gradient(85.11deg, #0B6366 0.31%, #58A4EC 100.31%);
-      }
-
-      &:active {
-        background:
-                linear-gradient(0deg, rgba(0,0,0,.10), rgba(0,0,0,.10)),
-                linear-gradient(85.11deg, #0B6366 0.31%, #58A4EC 100.31%);
-      }
-    }
   }
 
   &__flex {
@@ -135,11 +119,11 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
+    @media (max-width: 1471px) {
+      gap: 16px;
+    }
     @media (max-width: 751px) {
       gap: 10px;
-    }
-    @media (max-width: 525px) {
-      margin-top: 40px;
     }
   }
 

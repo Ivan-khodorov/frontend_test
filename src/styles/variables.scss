@@ -17,6 +17,7 @@
 :root {
   --font-size-title: 32px;
   --font-weight-title: 600;
+  --font-size-subtitle-info: 28px;
   --font-size-header-text: 20px;
   --font-weight-header-text: 600;
   --font-size-subtitle: 18px;
@@ -66,6 +67,7 @@
 @media (max-width: 1439px) {
   :root {
     --font-size-title: 26px;
+    --font-size-subtitle-info: 26px;
     --font-size-header-text: 18px;
     --font-size-subtitle: 16px;
     --font-size-button: 15px;
@@ -75,6 +77,7 @@
 
 @media (max-width: 767px) {
   :root {
+    --font-size-subtitle-info: 22px;
     --font-size-title: 22px;
     --font-size-header-text: 16px;
     --font-size-subtitle: 16px;
@@ -85,10 +88,11 @@
 
 @media (max-width: 525px) {
   :root {
+    --font-size-subtitle-info: 20px;
     --font-size-title: 20px;
     --font-size-header-text: 14px;
     --font-size-subtitle: 16px;
-    --font-size-button: 13px;
+    --font-size-button: 12px;
     --font-size-info: 12px;
   }
 }
