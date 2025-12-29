@@ -1,39 +1,60 @@
-<!DOCTYPE html><html lang=ru><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>Legal Expert - Выбор отрасли права</title><link rel=stylesheet href=/frontend_test/pages.b8bd2142.css><link rel=stylesheet href=/frontend_test/Administrative.80d8ffbc.css><body>
-<div class=app>
-    <header class=header>
-        <div class=container>
-            <div class=header__inner>
-                <div class=header__logos>
-                    <img src=/frontend_test/logo-new.8582f29c.svg alt="Legal Expert new logo" class=header__logo-img>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Expert - Выбор отрасли права</title>
+  <script type="module" crossorigin src="/frontend_test/assets/language-switcher-oABwmc4U.js"></script>
+  <script type="module" crossorigin src="/frontend_test/assets/Category-Jv-c87zx.js"></script>
+  <link rel="stylesheet" crossorigin href="/frontend_test/assets/language-switcher-Bftq7djE.css">
+  <link rel="stylesheet" crossorigin href="/frontend_test/assets/Category-dDJkX1Lz.css">
+</head>
+<body>
+<div class="app">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logos">
+                    <img src="/frontend_test/assets/logo-new-CDS-Knym.svg"
+                         alt="Legal Expert new logo"
+                         class="header__logo-img">
 
-                    <img src=/frontend_test/logo.87d5e9f4.png alt="Legal Expert logo" class=header__logo-img>
+                    <img src="/frontend_test/assets/logo-sYcnU56Y.png"
+                         alt="Legal Expert logo"
+                         class="header__logo-img">
 
-                    <div class=header__text>
+                    <div class="header__text">
                         Система подготовки к судебным процессам
                     </div>
                 </div>
 
-                <div class=header__lang>
-                    <div class=lang-switch data-lang=ru>
-                        <button class=lang-switch__button type=button aria-haspopup=listbox aria-expanded=false>
-                            <span class=lang-switch__label>Рус</span>
-                            <span class=lang-switch__icon>
-                              <svg xmlns:xmlns=http://www.w3.org/2000/svg width=12 height=6 fill=none class=lang-switch__arrow viewBox="0 0 12 6"><path stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-miterlimit=10 stroke-width=1.25 d="M11.185.625 6.838 4.972a1.324 1.324 0 0 1-1.867 0L.626.625"/></svg>
+                <div class="header__lang">
+                    <div class="lang-switch" data-lang="ru">
+                        <button class="lang-switch__button" type="button" aria-haspopup="listbox" aria-expanded="false">
+                            <span class="lang-switch__label">Рус</span>
+                            <span class="lang-switch__icon">
+                              <svg class="lang-switch__arrow" width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.185 0.625L6.83833 4.97167C6.325 5.485 5.485 5.485 4.97167 4.97167L0.625 0.625"  stroke="currentColor" stroke-width="1.25" stroke-miterlimit="10"  stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
                             </span>
                         </button>
-                        <div class=lang-switch__menu role=listbox>
-                            <ul class=lang-switch__list>
-                                <li class="is-selected lang-switch__item" data-lang=ru role=option aria-selected=true>
-                                    <span class=lang-switch__item-label>Рус</span>
-                                    <span class=lang-switch__check>
-                                      <svg xmlns:xmlns=http://www.w3.org/2000/svg width=12 height=9 fill=none class=lang-switch__check-icon viewBox="0 0 12 9"><path stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=1.25 d="M.625 4.05 4.05 7.474 10.91.625"/></svg>
+                        <div class="lang-switch__menu" role="listbox">
+                            <ul class="lang-switch__list">
+                                <li class="lang-switch__item is-selected" data-lang="ru" role="option" aria-selected="true">
+                                    <span class="lang-switch__item-label">Рус</span>
+                                    <span class="lang-switch__check">
+                                      <svg class="lang-switch__check-icon" width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.625 4.04954L4.04954 7.47408L10.9107 0.625"  stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
                                     </span>
                                 </li>
 
-                                <li class=lang-switch__item data-lang=kk role=option aria-selected=false>
-                                    <span class=lang-switch__item-label>Қаз</span>
-                                    <span class=lang-switch__check>
-                                      <svg xmlns:xmlns=http://www.w3.org/2000/svg width=12 height=9 fill=none class=lang-switch__check-icon viewBox="0 0 12 9"><path stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=1.25 d="M.625 4.05 4.05 7.474 10.91.625"/></svg>
+                                <li class="lang-switch__item" data-lang="kk" role="option" aria-selected="false">
+                                    <span class="lang-switch__item-label">Қаз</span>
+                                    <span class="lang-switch__check">
+                                      <svg class="lang-switch__check-icon" width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.625 4.04954L4.04954 7.47408L10.9107 0.625" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
                                     </span>
                                 </li>
                             </ul>
@@ -45,71 +66,80 @@
     </header>
 
 
-    <main class=main>
-        <div class=categories>
-            <div class=categories__container>
+    <main class="main">
+        <div class="categories">
+            <div class="categories__container">
 
-                <div class=categories__path>
-                    <a class=categories__path-text href=/frontend_test/index.html>Отрасль права</a>
-                    <img src=/frontend_test/backslash.65fc17ad.svg alt>
-                    <span class=categories__path-current>Категория административного дела</span>
+                <div class="categories__path">
+                    <a class="categories__path-text" href="../../index.html">Отрасль права</a>
+                    <img src="data:image/svg+xml,%3csvg%20width='7'%20height='16'%20viewBox='0%200%207%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.000242174%2015.0727L5.28024%200.000655174H6.67224L1.39224%2015.0727H0.000242174Z'%20fill='%231C1C1C'%20fill-opacity='0.7'/%3e%3c/svg%3e" alt="">
+                    <span class="categories__path-current">Категория административного дела</span>
                 </div>
 
-                <h1 class=categories__title>
+                <h1 class="categories__title">
                     Выберите категорию административного дела
                 </h1>
 
-                <div class=categories__search>
-                    <label class=categories__search-label>
-                        <svg xmlns:xmlns=http://www.w3.org/2000/svg width=20 height=20 fill=none class=categories__search-icon viewBox="0 0 20 20"><path stroke=#1c1c1c stroke-linecap=round stroke-linejoin=round stroke-opacity=.6 stroke-width=1.25 d="M9.583 17.5A7.917 7.917 0 1 0 9.583 1.666 7.917 7.917 0 0 0 9.583 17.499"/><path stroke=#0b6366 stroke-linecap=round stroke-linejoin=round stroke-opacity=.2 stroke-width=1.25 d="M9.583 17.5A7.917 7.917 0 1 0 9.583 1.666 7.917 7.917 0 0 0 9.583 17.499"/><path stroke=#1c1c1c stroke-linecap=round stroke-linejoin=round stroke-opacity=.6 stroke-width=1.25 d="m18.333 18.333-1.666-1.667"/><path stroke=#0b6366 stroke-linecap=round stroke-linejoin=round stroke-opacity=.2 stroke-width=1.25 d="m18.333 18.333-1.666-1.667"/></svg>
-                        <input class=categories__search-input data-placeholder-desktop="Введите ключевые слова (например: трудовые споры, наследство)" data-placeholder-mobile="Введите ключевые слова" placeholder="Введите ключевые слова">
+                <div class="categories__search">
+                    <label class="categories__search-label">
+                        <svg class="categories__search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.58317 17.4993C13.9554 17.4993 17.4998 13.9549 17.4998 9.58268C17.4998 5.21043 13.9554 1.66602 9.58317 1.66602C5.21092 1.66602 1.6665 5.21043 1.6665 9.58268C1.6665 13.9549 5.21092 17.4993 9.58317 17.4993Z" stroke="#1C1C1C" stroke-opacity="0.6" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.58317 17.4993C13.9554 17.4993 17.4998 13.9549 17.4998 9.58268C17.4998 5.21043 13.9554 1.66602 9.58317 1.66602C5.21092 1.66602 1.6665 5.21043 1.6665 9.58268C1.6665 13.9549 5.21092 17.4993 9.58317 17.4993Z" stroke="#0B6366" stroke-opacity="0.2" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.3332 18.3327L16.6665 16.666" stroke="#1C1C1C" stroke-opacity="0.6" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.3332 18.3327L16.6665 16.666" stroke="#0B6366" stroke-opacity="0.2" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <input
+                                class="categories__search-input"
+                                type="text"
+                                data-placeholder-desktop="Введите ключевые слова (например: трудовые споры, наследство)"
+                                data-placeholder-mobile="Введите ключевые слова"
+                                placeholder="Введите ключевые слова"
+                        />
                     </label>
                 </div>
 
-                <div class=categories__flex>
-                    <article class=categories__card>Трудовые споры</article>
-                    <article class=categories__card>Споры по вопросам наследственного права</article>
-                    <article class=categories__card>О возмещении вреда за повреждение здоровья или смерть гражданина</article>
-                    <article class=categories__card>Об установлении фактов, имеющих юридическое значение</article>
+                <div class="categories__flex">
+                    <article class="categories__card">Трудовые споры</article>
+                    <article class="categories__card">Споры по вопросам наследственного права</article>
+                    <article class="categories__card">О возмещении вреда за повреждение здоровья или смерть гражданина</article>
+                    <article class="categories__card">Об установлении фактов, имеющих юридическое значение</article>
 
-                    <article class=categories__card>Споры, связанные с заключением, изменением, расторжением договора страхования</article>
-                    <article class=categories__card>Споры, связанные с заключением, изменением, расторжением договора имущественного найма</article>
-                    <article class=categories__card>Споры, вытекающие из земельных правоотношений</article>
-                    <article class=categories__card>Об обязании, понуждении (исполнении, требования, предписания)</article>
+                    <article class="categories__card">Споры, связанные с заключением, изменением, расторжением договора страхования</article>
+                    <article class="categories__card">Споры, связанные с заключением, изменением, расторжением договора имущественного найма</article>
+                    <article class="categories__card">Споры, вытекающие из земельных правоотношений</article>
+                    <article class="categories__card">Об обязании, понуждении (исполнении, требования, предписания)</article>
 
-                    <article class=categories__card>Споры по вопросам наследственного права</article>
-                    <article class=categories__card>О возмещении вреда за повреждение здоровья или смерть гражданина</article>
-                    <article class=categories__card>Об установлении фактов, имеющих юридическое значение</article>
-                    <article class=categories__card>Трудовые споры</article>
+                    <article class="categories__card">Споры по вопросам наследственного права</article>
+                    <article class="categories__card">О возмещении вреда за повреждение здоровья или смерть гражданина</article>
+                    <article class="categories__card">Об установлении фактов, имеющих юридическое значение</article>
+                    <article class="categories__card">Трудовые споры</article>
 
-                    <article class=categories__card>Споры, связанные с заключением, изменением, расторжением договора страхования</article>
-                    <article class=categories__card>Споры, вытекающие из земельных правоотношений</article>
-                    <article class=categories__card>Об обязании, понуждении (исполнении, требования, предписания)</article>
-                    <article class=categories__card>Споры, связанные с имущественным наймом</article>
+                    <article class="categories__card">Споры, связанные с заключением, изменением, расторжением договора страхования</article>
+                    <article class="categories__card">Споры, вытекающие из земельных правоотношений</article>
+                    <article class="categories__card">Об обязании, понуждении (исполнении, требования, предписания)</article>
+                    <article class="categories__card">Споры, связанные с имущественным наймом</article>
                 </div>
 
             </div>
         </div>
 
     </main>
-    <footer class=footer>
-        <div class=container>
-            <div class=footer__inner>
-                <div class=footer__copyright>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__copyright">
                     © 2025 LegalExpert. Все права защищены.
                 </div>
 
-                <div class=footer__links>
-                    <a href=# class=footer__link>Связаться с нами</a>
-                    <a href=# class=footer__link>Условия использования</a>
-                    <a href=# class=footer__link>Политика конфиденциальности</a>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Связаться с нами</a>
+                    <a href="#" class="footer__link">Условия использования</a>
+                    <a href="#" class="footer__link">Политика конфиденциальности</a>
                 </div>
             </div>
         </div>
     </footer>
-</div>
-<script src=/frontend_test/Administrative.d39ddf2d.js></script>
-<script type=module src=/frontend_test/pages.2babf868.js></script>
+</div>
 
-
-
+</body>
+</html>
