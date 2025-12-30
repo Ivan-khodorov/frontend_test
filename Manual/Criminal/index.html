@@ -88,6 +88,7 @@
             </label>
             <label class="manual__menu-overlay" for="manual-menu-toggle" aria-hidden="true"></label>
             <div class="manual__layout">
+                <!-- LEFT SIDEBAR -->
                 <aside class="manual__sidebar" aria-label="Навигация">
                     <div class="manual__search">
                         <svg class="manual__search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -107,15 +108,15 @@
                     </div>
 
                     <nav class="manual__nav" aria-label="Список шагов">
-                        <a class="manual__nav-item is-active" href="../Criminal/index.html">
+                        <a class="manual__nav-item is-active" href="../Civil/index.html">
                             <span class="manual__nav-text">Гражданское судопроизводство</span>
                         </a>
 
-                        <a class="manual__nav-item" href="FilingClaim/FilingClaim.html">
+                        <a class="manual__nav-item" href="FilingClaim.html">
                             <span class="manual__nav-text">1. Предъявление иска</span>
                         </a>
 
-                        <a class="manual__nav-item" href="FormContent/FormContent.html">
+                        <a class="manual__nav-item" href="FormContent.html">
                             <span class="manual__nav-text">2. Форма и содержание иска</span>
                         </a>
 
@@ -123,41 +124,46 @@
                             <input class="manual__tree-toggle" type="checkbox" id="manual-tree-docs" />
 
                             <div class="manual__tree-head">
-                                <a class="manual__nav-item manual__nav-item--tree" href="DocumentsList/DocumentsList.html">
+                                <a class="manual__nav-item manual__nav-item--tree" href="DocumentsList.html">
                                     <span class="manual__nav-text">3. Перечень документов, прилагаемых к иску</span>
                                 </a>
 
-                                <label class="manual__tree-arrow" for="manual-tree-docs" aria-label="Показать список"></label>
+                                <label class="manual__tree-arrow" for="manual-tree-docs" aria-label="Показать список">
+                                    <svg class="manual__tree-arrow--svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.94043 13.2807L10.2871 8.93404C10.8004 8.4207 10.8004 7.5807 10.2871 7.06737L5.94043 2.7207" stroke="#1C1C1C" stroke-opacity="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.94043 13.2807L10.2871 8.93404C10.8004 8.4207 10.8004 7.5807 10.2871 7.06737L5.94043 2.7207" stroke="#0B6366" stroke-opacity="0.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
                             </div>
 
                             <div class="manual__tree-list" aria-label="Подразделы">
-                                <a class="manual__tree-link" href="DocumentsList/DocumentsList.html#family">Семейные споры</a>
-                                <a class="manual__tree-link" href="DocumentsList/DocumentsList.html#inheritance">Наследственные споры</a>
+                                <a class="manual__tree-link" href="DocumentsList.html">Семейные споры</a>
+                                <a class="manual__tree-link" href="DocumentsList.html">Наследственные споры</a>
                             </div>
                         </div>
 
 
-                        <a class="manual__nav-item" href="StateDuty/StateDuty.html">
+                        <a class="manual__nav-item" href="StateDuty.html">
                             <span class="manual__nav-text">4. Оплата государственной пошлины</span>
                         </a>
 
-                        <a class="manual__nav-item" href="CostClaim/CostClaim.html">
+                        <a class="manual__nav-item" href="CostClaim.html">
                             <span class="manual__nav-text">5. Цена иска</span>
                         </a>
 
-                        <a class="manual__nav-item" href="LegalCosts/LegalCosts.html">
+                        <a class="manual__nav-item" href="LegalCosts.html">
                             <span class="manual__nav-text">6. Издержки, связанные с производством по делу</span>
                         </a>
 
-                        <a class="manual__nav-item" href="Distribution/Distribution.html">
+                        <a class="manual__nav-item" href="Distribution.html">
                             <span class="manual__nav-text">7. Распределение расходов между сторонами</span>
                         </a>
 
-                        <a class="manual__nav-item" href="FormFeed/FormFeed.html">
+                        <a class="manual__nav-item" href="FormFeed.html">
                             <span class="manual__nav-text">8. Форма подачи иска</span>
                         </a>
 
-                        <a class="manual__nav-item" href="RegistrationStatus/RegistrationStatus.html">
+                        <a class="manual__nav-item" href="RegistrationStatus.html">
                             <span class="manual__nav-text">9. Статус регистрации и ход рассмотрения</span>
                         </a>
                     </nav>
@@ -174,13 +180,14 @@
                     </button>
                 </aside>
 
+                <!-- RIGHT CONTENT -->
                 <section class="manual__content" aria-label="Контент инструкции">
                     <div class="manual__path">
                         <a class="categories__path-text" href="../../index.html">Отрасль права</a>
                         <img src="data:image/svg+xml,%3csvg%20width='7'%20height='16'%20viewBox='0%200%207%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.000242174%2015.0727L5.28024%200.000655174H6.67224L1.39224%2015.0727H0.000242174Z'%20fill='%231C1C1C'%20fill-opacity='0.7'/%3e%3c/svg%3e" alt="">
-                        <a class="categories__path-text" href="../../Category/Criminal/index.html">Категория гражданского дела</a>
+                        <a class="categories__path-text" href="../../Category/Civil/index.html">Категория гражданского дела</a>
                         <img src="data:image/svg+xml,%3csvg%20width='7'%20height='16'%20viewBox='0%200%207%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.000242174%2015.0727L5.28024%200.000655174H6.67224L1.39224%2015.0727H0.000242174Z'%20fill='%231C1C1C'%20fill-opacity='0.7'/%3e%3c/svg%3e" alt="">
-                        <a class="categories__path-text" href="../../PersonsSelect/Criminal/index.html">Процессуальный статус</a>
+                        <a class="categories__path-text" href="../../PersonsSelect/Civil/index.html">Процессуальный статус</a>
                         <img src="data:image/svg+xml,%3csvg%20width='7'%20height='16'%20viewBox='0%200%207%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.000242174%2015.0727L5.28024%200.000655174H6.67224L1.39224%2015.0727H0.000242174Z'%20fill='%231C1C1C'%20fill-opacity='0.7'/%3e%3c/svg%3e" alt="">
                         <span class="categories__path-current">Инструкция</span>
                     </div>
@@ -210,13 +217,13 @@
                     </div>
 
                     <div class="manual__actions">
-                        <button class="manual__next" type="button">
+                        <a class="manual__next" href="FilingClaim.html">
                             <span class="manual__next-text">Продолжить</span>
                             <svg class="manual__next-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7.75 20.75H13.75C18.75 20.75 20.75 18.75 20.75 13.75V7.75C20.75 2.75 18.75 0.75 13.75 0.75H7.75C2.75 0.75 0.75 2.75 0.75 7.75V13.75C0.75 18.75 2.75 20.75 7.75 20.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M9.49023 14.2807L13.0102 10.7507L9.49023 7.2207" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                        </button>
+                        </a>
                     </div>
                 </section>
             </div>
