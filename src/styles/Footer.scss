@@ -4,6 +4,7 @@
   margin: 16px auto 0 auto;
   padding: 24px 16px;
   flex-shrink: 0;
+  font-size: var(--font-size-info);
 
   @media (max-width: 768px) {
     padding: 24px 20px;

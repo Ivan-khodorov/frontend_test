@@ -1,10 +1,16 @@
-@import "variables";
-@import "base";
+@use './variables.scss';
+@use './base.scss';
 
-@import "Header";
-@import "Footer";
+@use 'header';
+@use 'language-switcher';
 
-@import "LanguageSwitcher";
-@import "Card";
+@use 'footer';
 
-@import "../pages/Home/Home";
+@use 'home';
+@use 'card';
+
+@use 'category';
+@use 'persons-select';
+
+@use 'content';
+@use 'manual';

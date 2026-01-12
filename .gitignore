@@ -1,4 +1,3 @@
-# Default ignored files
 /shelf/
 /.idea/workspace.xml
 /node_modules
@@ -7,8 +6,6 @@ dist/
 node_modules/
 /.idea
 /build-tools
-# Editor-based HTTP Client requests
 /httpRequests/
-# Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml

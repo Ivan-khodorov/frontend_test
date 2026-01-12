@@ -1,0 +1,82 @@
+<%- include('../partials/header.ejs', { title: 'Главная страница' }) %>
+<main class="main">
+    <div class="categories">
+        <div class="categories__container">
+
+            <div class="persons__path">
+                <a class="categories__path-text" href="./index.html">Отрасль права</a>
+                <img src="../img/backslash.svg" alt="">
+                <a class="categories__path-text" href="../criminal-category.html">Категория уголовного дела</a>
+                <img src="../img/backslash.svg" alt="">
+                <span class="categories__path-current">Процессуальный статус</span>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="level-list card-section">
+        <h2 class="persons__title card-section__title" id="level-title">Выберите свой процессуальный статус</h2>
+        <div class="card-section__flex level-list__cards">
+            <a class="card level-card" data-level="civil" href="./manual.html">
+                <div class="card__icon">
+                    <img src="../img/persons.png" alt="Свидетель, имеющий право на защиту">
+                </div>
+                <div class="card__content">
+                    <h2 class="card__title">Свидетель, имеющий право на защиту</h2>
+                    <p class="card__text">
+                        Рассмотрение споров о защите нарушенных или оспариваемых прав, свобод и законных интересов
+                    </p>
+                </div>
+            </a>
+
+            <a class="card level-card" data-level="administrative" href="./manual.html">
+                <div class="card__icon">
+                    <img src="../img/persons.png" alt="Подозреваемый">
+                </div>
+                <div class="card__content">
+                    <h2 class="card__title">Подозреваемый</h2>
+                    <p class="card__text">
+                        Лицо, в отношении которого есть подозрение в совершении преступления
+                    </p>
+                </div>
+            </a>
+
+            <a class="card level-card" data-level="criminal" href="./manual.html">
+                <div class="card__icon">
+                    <img src="../img/persons.png" alt="Обвиняемый">
+                </div>
+                <div class="card__content">
+                    <h2 class="card__title">Обвиняемый</h2>
+                    <p class="card__text">
+                        Лицо, в отношении которого утвержден обвинительный акт
+                    </p>
+                </div>
+            </a>
+
+            <a class="card level-card" data-level="criminal" href="./manual.html">
+                <div class="card__icon">
+                    <img src="../img/persons.png" alt="Подсудимый">
+                </div>
+                <div class="card__content">
+                    <h2 class="card__title">Подсудимый</h2>
+                    <p class="card__text">
+                        Лицо, в отношении которого назначено судебное разбирательство
+                    </p>
+                </div>
+            </a>
+
+            <a class="card level-card" data-level="criminal" href="./manual.html">
+                <div class="card__icon">
+                    <img src="../img/persons.png" alt="Потерпевший">
+                </div>
+                <div class="card__content">
+                    <h2 class="card__title">Потерпевший</h2>
+                    <p class="card__text">
+                        Лицо, которому преступлением причинен вред
+                    </p>
+                </div>
+            </a>
+        </div>
+    </section>
+</main>
+<%- include('../partials/footer.ejs') %>

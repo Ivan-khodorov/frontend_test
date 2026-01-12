@@ -1,0 +1,176 @@
+<%- include('../partials/header.ejs', { title: 'Главная страница' }) %>
+
+    <main class="main" id="app-main">
+        <section class="process-list card-section" id="process-block">
+            <h2 class="home__title card-section__title" id="home-title">Выберите отрасль права</h2>
+
+            <div class="card-section__flex process-list__cards">
+                <a class="card process-card" data-process="civil" data-tabid="0">
+                    <div class="card__icon">
+                        <img src="../img/civil-icon.png" alt="Гражданский процесс">
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Гражданский процесс</h2>
+                        <p class="card__text">
+                            Рассмотрение споров о защите нарушенных или оспариваемых прав, свобод и законных интересов
+                        </p>
+                    </div>
+                </a>
+
+                <a class="card process-card" data-process="administrative" data-tabid="1">
+                    <div class="card__icon">
+                        <img src="../img/administrative.png" alt="Административный процесс">
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Административный процесс</h2>
+                        <p class="card__text">
+                            Разрешение административных дел с целью защиты прав в публично-правовых отношениях
+                        </p>
+                    </div>
+                </a>
+
+                <a class="card process-card" data-process="criminal" data-tabid="2">
+                    <div class="card__icon">
+                        <img src="../img/criminal.png" alt="Уголовный процесс">
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Уголовный процесс</h2>
+                        <p class="card__text">
+                            Пресечение, раскрытие и расследование уголовных правонарушений
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+        <section class="level-select card-section" id="level-block">
+            <div class="card-section__level" data-tabid="0" >
+                <div class="card-section__header">
+                    <a class="card-section__back" href="index.html" aria-label="Назад">
+                        <img src="../img/arrow-left.svg" alt="">
+                    </a>
+                    <h2 class="home__title card-section__title">Выберите уровень рассмотрения дела</h2>
+                    <span class="card-section__spacer" aria-hidden="true"></span>
+                </div>
+
+                <div class="card-section__flex">
+                    <a class="card level-card" data-level="pretrial" href="civil-category.html">
+                        <div class="card__icon">
+                            <img src="../img/level-pretrial.png" alt="Досудебная претензия">
+                        </div>
+                        <div class="card__content">
+                            <h2 class="card__title">Досудебная претензия</h2>
+                            <p class="card__text">Попытка урегулировать спор до обращения в суд</p>
+                        </div>
+                    </a>
+
+                    <a class="card level-card" data-level="first-instance" href="civil-category.html">
+                        <div class="card__icon">
+                            <img src="../img/level-first-instance.png" alt="Первая инстанция">
+                        </div>
+                        <div class="card__content">
+                            <h2 class="card__title">Первая инстанция</h2>
+                            <p class="card__text">Первоначальное рассмотрение дела в суде</p>
+                        </div>
+                    </a>
+
+                    <a class="card level-card" data-level="appeal" href="civil-category.html">
+                        <div class="card__icon">
+                            <img src="../img/level-appeal.png" alt="Подготовка к апелляции">
+                        </div>
+                        <div class="card__content">
+                            <h2 class="card__title">Подготовка к апелляции</h2>
+                            <p class="card__text">Обжалование решения суда первой инстанции</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card-section__level" data-tabid="1" >
+                <div class="card-section__header">
+                    <a class="card-section__back" href="index.html" aria-label="Назад">
+                        <img src="../img/arrow-left.svg" alt="">
+                    </a>
+                    <h2 class="home__title card-section__title">Выберите уровень рассмотрения дела</h2>
+                    <span class="card-section__spacer" aria-hidden="true"></span>
+                </div>
+
+                <div class="card-section__flex">
+                    <a class="card level-card" data-level="pretrial" href="administrative-category.html">
+                        <div class="card__icon">
+                            <img src="../img/level-pretrial.png" alt="Досудебная претензия">
+                        </div>
+                        <div class="card__content">
+                            <h2 class="card__title">Досудебная претензия</h2>
+                            <p class="card__text">Попытка урегулировать спор до обращения в суд</p>
+                        </div>
+                    </a>
+
+                    <a class="card level-card" data-level="first-instance" href="administrative-category.html">
+                        <div class="card__icon">
+                            <img src="../img/level-first-instance.png" alt="Первая инстанция">
+                        </div>
+                        <div class="card__content">
+                            <h2 class="card__title">Первая инстанция</h2>
+                            <p class="card__text">Первоначальное рассмотрение дела в суде</p>
+                        </div>
+                    </a>
+
+                    <a class="card level-card" data-level="appeal" href="administrative-category.html">
+                        <div class="card__icon">
+                            <img src="../img/level-appeal.png" alt="Подготовка к апелляции">
+                        </div>
+                        <div class="card__content">
+                            <h2 class="card__title">Подготовка к апелляции</h2>
+                            <p class="card__text">Обжалование решения суда первой инстанции</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card-section__level" data-tabid="2" >
+                <div class="card-section__header">
+                    <a class="card-section__back" href="index.html" aria-label="Назад">
+                        <img src="../img/arrow-left.svg" alt="">
+                    </a>
+                    <h2 class="home__title card-section__title" >Выберите уровень рассмотрения дела</h2>
+                    <span class="card-section__spacer" aria-hidden="true"></span>
+                </div>
+
+                <div class="card-section__flex">
+                    <a class="card level-card" data-level="pretrial" href="criminal-category.html">
+                        <div class="card__icon">
+                            <img src="../img/trial-icon.png" alt="Досудебное производство">
+                        </div>
+                        <div class="card__content">
+                            <h2 class="card__title">Досудебное производство</h2>
+                            <p class="card__text">Попытка урегулировать спор до обращения в суд</p>
+                        </div>
+                    </a>
+
+                    <a class="card level-card" data-level="first-instance" href="criminal-category.html">
+                        <div class="card__icon">
+                            <img src="../img/level-first-instance.png" alt="Первая инстанция">
+                        </div>
+                        <div class="card__content">
+                            <h2 class="card__title">Первая инстанция</h2>
+                            <p class="card__text">Первоначальное рассмотрение дела в суде</p>
+                        </div>
+                    </a>
+
+                    <a class="card level-card" data-level="appeal" href="criminal-category.html">
+                        <div class="card__icon">
+                            <img src="../img/level-appeal.png" alt="Подготовка к апелляции">
+                        </div>
+                        <div class="card__content">
+                            <h2 class="card__title">Подготовка к апелляции</h2>
+                            <p class="card__text">Обжалование решения суда первой инстанции</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<%- include('../partials/footer.ejs') %>
