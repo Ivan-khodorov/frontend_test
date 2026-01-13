@@ -21,10 +21,11 @@
       main: './src/scripts/main.js',
     },
     output: {
-      filename: '[name].js',
-      path: path.resolve(__dirname, 'dist'),
-      clean: true,
-      assetModuleFilename: 'img/[name][hash][ext]'
+        filename: '[name].js',
+        path: path.resolve(__dirname, 'dist'),
+        clean: true,
+        assetModuleFilename: 'img/[name][hash][ext]',
+        publicPath: './'
     },
     devServer: {
       static: {
