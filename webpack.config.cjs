@@ -25,7 +25,7 @@
         path: path.resolve(__dirname, 'dist'),
         clean: true,
         assetModuleFilename: 'img/[name][hash][ext]',
-        publicPath: './'
+        publicPath: ''
     },
     devServer: {
       static: {
@@ -51,10 +51,15 @@
         },
         {
           test: /\.s[ac]ss$/i,
-          use: [
-            MiniCssExtractPlugin.loader,
-            'css-loader',
-            {
+            use: [
+                {
+                    loader: MiniCssExtractPlugin.loader,
+                    options: {
+                        publicPath: ''
+                    }
+                },
+                'css-loader',
+                {
               loader: 'sass-loader',
               options: {
                 implementation: require('sass')

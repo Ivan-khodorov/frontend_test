@@ -52,11 +52,11 @@
             const item = e.target.closest(".lang-switch__item");
             if (!item) return;
 
-            const code = item.dataset.lang;
-            if (!code) return;
-
-            setCurrent(code);
-            setOpen(false);
+            const url = item.dataset.url;
+            if (url) {
+                window.location.href = url;
+                return;
+            }
         });
 
         document.addEventListener("click", (e) => {
